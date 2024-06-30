@@ -2,16 +2,16 @@ export const professionalProjects = [
     {
         title: "724 Events",
         descriptionEn: "Debugging a website with Jest & React Dev Tools",
-        descriptionFr: "",
+        descriptionFr: "Déboggage d'un site web avec Jest & React Dev Tools",
         tags: ["css3", "html5",],
-        imgSrc: "/724events.webp"
+        imgSrc: "/OpenClassrooms.webp"
     },
     {
         title: "ArgentBank",
         descriptionEn: "Implement a Redux store & MongoDB paths for a banking app",
-        descriptionFr: "",
+        descriptionFr: "Implémenter un store Redux & des routes MongoDB pour une application bancaire",
         tags: ["vite", "javascript",],
-        imgSrc: "/argentBank.webp"
+        imgSrc: "/OpenClassrooms.webp"
     }
 ];
 

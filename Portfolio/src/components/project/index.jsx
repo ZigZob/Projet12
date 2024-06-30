@@ -9,7 +9,7 @@ export default function Project({ imgSrc, title, descriptionEn, descriptionFr, t
     return (
         <li className={"project"}>
             <div className="project__Wrapper">
-                <img className="project__img" src={imgSrc} alt={{ title }} />
+                <img className="project__img" src={imgSrc} alt={title} />
                 <div className="project__textWrapper">
                     <h3 className="project__title" >{title}</h3>
                     <p className="project__description">{lang === "en" ? descriptionEn : descriptionFr}</p>

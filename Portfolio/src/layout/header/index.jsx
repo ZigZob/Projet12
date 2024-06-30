@@ -15,16 +15,17 @@ export default function Header() {
 
         <header className={`${time === "night" ? "night" : "day"}`
         } >
-            <div onClick={() => dispatch(toggleLang())} className={`langWrapper ${time === 'night' ? 'toggled' : ''}`}>
-                <div className={`lang ${lang === "fr" ? "front" : "back"}`}>FR</div>
-                <div className={`lang ${lang === "en" ? "front" : "back"}`}>EN</div>
+            <div className="lang" onClick={() => dispatch(toggleLang())}>
+                <span className={`lang__element ${lang === "fr" ? "front" : "back"}`}>FR</span>
+                <span className={`lang__element ${lang === "en" ? "front" : "back"}`}>EN</span>
             </div>
-            <div className="dev" onClick={() => dispatch(toggleTime())}>
-                <div className={`dev__by--${time === "night" ? "night front" : "day back"}`}>
-                    {database[key].header[0]}
+            <div className="time" onClick={() => dispatch(toggleTime())}>
+                <div className={`time__element ${time === "night" ? "front" : "back"}`}>
+
+                    {lang === "en" ? "Dev By Night" : "Dev la Nuit"}
                 </div>
-                <div className={`dev__by--${time === "day" ? "night front" : "day back"}`}>
-                    {database[`${lang}_${time}`].header[1]}
+                <div className={`time__element ${time === "day" ? "front" : "back"}`}>
+                    {lang === "en" ? "Dev By Day" : "Dev le Jour"}
                 </div>
             </div>
         </header>

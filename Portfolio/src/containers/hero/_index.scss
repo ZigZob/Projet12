@@ -1,22 +1,23 @@
 h1 {
     font-size: 80px;
-    text-wrap: pretty;
-    text-align: center;
-    margin: 0;
 }
 
 h2 {
     font-size: 40px;
-    text-wrap: pretty;
-    text-align: center;
 }
 
 .hero {
     max-width: 1440px;
-    margin: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
 
     &__element {
         max-width: 1024px;
+        text-wrap: pretty;
+        text-align: center;
+        margin: 0;
 
         &--night {
             color: #f5dd42;

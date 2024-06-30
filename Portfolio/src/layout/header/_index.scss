@@ -7,50 +7,53 @@ header {
     z-index: 1337;
 }
 
-.dev {
-    display: flex;
-    flex-direction: column;
+.time {
+    position: relative;
+    width: 130px;
+    height: 80px;
+    border-radius: 0 0 0 100%;
     cursor: pointer;
-    transition: all 0.3s ease;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 
-    &__by--day.front {}
+    &__element {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+        transition: all 0.3s ease;
 
-    &__by--day.back {}
+        &.front {
+            opacity: 1;
+        }
 
-    &__by--night.front {}
-
-    &__by--night.back {}
+        &.back {
+            opacity: 0.4;
+            transform: translate(15px, 15px);
+        }
+    }
 }
 
-.langWrapper {
+.lang {
     position: relative;
-    width: 80px;
+    width: 130px;
     height: 80px;
     overflow: hidden;
     border-radius: 0 0 100% 0;
     cursor: pointer;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-}
 
-.lang {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    transition: all 0.3s ease;
-
-    &.front {
-        opacity: 1;
-        top: 0px;
-        left: 0px;
-    }
-
-    &.back {
-        opacity: 0.4;
+    &__element {
+        position: absolute;
         top: 15px;
-        left: -12px;
+        left: 50px;
+        transition: all 0.3s ease;
+
+        &.front {
+            opacity: 1;
+        }
+
+        &.back {
+            opacity: 0.4;
+            transform: translate(-15px, 15px);
+        }
     }
 }
