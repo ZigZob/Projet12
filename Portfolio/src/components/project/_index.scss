@@ -1,0 +1,29 @@
+.fade {
+    transition: all 0.3s;
+}
+
+.fade-out {
+    opacity: 0;
+
+    &.odd {
+        transform: translateX(50px);
+    }
+
+    &.even {
+        transform: translateX(-50px);
+    }
+}
+
+.fade-in {
+    opacity: 1;
+}
+
+.projectWrapper {
+    width: 300px;
+    height: 200px;
+}
+
+.img {
+    width: 10%;
+    height: 10%;
+}

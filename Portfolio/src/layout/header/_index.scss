@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DBDDBN {
+    cursor: pointer;
+}
+
+.langWrapper {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 0 0 100% 0;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.lang {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: all 0.3s ease;
+
+    &.front {
+        opacity: 1;
+        top: 0px;
+        left: 0px;
+    }
+
+    &.back {
+        opacity: 0.4;
+        top: 15px;
+        left: -12px;
+    }
+}

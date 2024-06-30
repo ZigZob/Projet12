@@ -1,0 +1,12 @@
+h1 {
+    font-size: 80px;
+}
+
+.hero {
+    max-width: 1440px;
+    margin: auto;
+
+    &__element {
+        max-width: 1024px;
+    }
+}
