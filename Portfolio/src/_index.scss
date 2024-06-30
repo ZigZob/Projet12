@@ -4,7 +4,6 @@
 
 body {
     margin: 0;
-    display: flex;
 }
 
 li {
@@ -26,4 +25,10 @@ li {
     background-color: #1c2a62;
     transition: background-color 1000ms ease;
     color: rgba(255, 255, 255, 0.7);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }

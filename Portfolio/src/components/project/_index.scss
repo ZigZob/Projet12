@@ -1,29 +1,28 @@
-.fade {
-    transition: all 0.3s;
-}
+.project {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-right: 20px;
+    margin: 20px auto 20px auto;
+    max-width: 720px;
+    border-radius: 20px;
+    overflow: hidden;
 
-.fade-out {
-    opacity: 0;
-
-    &.odd {
-        transform: translateX(50px);
+    &__Wrapper {
+        display: flex;
+        flex-direction: row;
     }
 
-    &.even {
-        transform: translateX(-50px);
+    &__img {}
+
+    &__textWrapper {
+        display: flex;
+        flex-direction: column;
     }
-}
 
-.fade-in {
-    opacity: 1;
-}
+    &__title {
+        display: flex;
+        justify-content: center;
+    }
 
-.projectWrapper {
-    width: 300px;
-    height: 200px;
-}
+    &__description {}
 
-.img {
-    width: 10%;
-    height: 10%;
 }

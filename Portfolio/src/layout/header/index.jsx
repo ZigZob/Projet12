@@ -13,20 +13,20 @@ export default function Header() {
     let key = `${lang}_${time}`
     return (
 
-        <header>
+        <header className={`${time === "night" ? "night" : "day"}`
+        } >
             <div onClick={() => dispatch(toggleLang())} className={`langWrapper ${time === 'night' ? 'toggled' : ''}`}>
                 <div className={`lang ${lang === "fr" ? "front" : "back"}`}>FR</div>
                 <div className={`lang ${lang === "en" ? "front" : "back"}`}>EN</div>
             </div>
             <div className="dev" onClick={() => dispatch(toggleTime())}>
-                <div className={`dev__by--${time === "night" ? "night" : "day"}`}>
+                <div className={`dev__by--${time === "night" ? "night front" : "day back"}`}>
                     {database[key].header[0]}
                 </div>
-                <div className={`dev__by--${time === "day" ? "night" : "day"}`}>
+                <div className={`dev__by--${time === "day" ? "night front" : "day back"}`}>
                     {database[`${lang}_${time}`].header[1]}
                 </div>
             </div>
-            <div>lang is {lang}</div>
         </header>
     )
 }

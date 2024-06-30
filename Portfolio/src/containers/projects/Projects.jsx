@@ -9,35 +9,20 @@ import { selectLang } from "../../store/slices/langSlice/selectors";
 export default function Projects() {
     const time = useSelector(selectTime);
     const lang = useSelector(selectLang);
-    const [fadeClass, setFadeClass] = useState('fade-in');
-    const [projectsToShow, setProjectsToShow] = useState(time === "night" ? gamingProjects : professionalProjects);
     let key = `${lang}_${time}`
-
-    useEffect(() => {
-        // Trigger fade out
-        setFadeClass('fade-out');
-
-        // Change content after fade out
-        const timer = setTimeout(() => {
-            setProjectsToShow(time === "night" ? gamingProjects : professionalProjects);
-            // Trigger fade in
-            setFadeClass('fade-in');
-        }, 300); // Duration of fade-out
-
-        return () => clearTimeout(timer);
-    }, [time]);
 
     return (
         <div>
             <h2>{database[key].heading2}</h2>
             <ul>
-                {projectsToShow.map((project, index) => (
+                {(time === "night" ? gamingProjects : professionalProjects).map((project, index) => (
                     <Project
                         key={index}
                         imgSrc={project.imgSrc}
                         tags={project.tags}
-                        id={project.id}
-                        fadeClass={fadeClass}
+                        title={project.title}
+                        descriptionEn={project.descriptionEn}
+                        descriptionFr={project.descriptionFr}
                     />
                 ))}
             </ul>

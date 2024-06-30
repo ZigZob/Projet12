@@ -1,26 +1,34 @@
 export const professionalProjects = [
     {
-        id: 1,
-        tags: ["css3", "html5", "kek"],
-        imgSrc: ""
+        title: "724 Events",
+        descriptionEn: "Debugging a website with Jest & React Dev Tools",
+        descriptionFr: "",
+        tags: ["css3", "html5",],
+        imgSrc: "/724events.webp"
     },
     {
-        id: 2,
-        tags: ["vite", "javascript", "bob"],
-        imgSrc: ""
+        title: "ArgentBank",
+        descriptionEn: "Implement a Redux store & MongoDB paths for a banking app",
+        descriptionFr: "",
+        tags: ["vite", "javascript",],
+        imgSrc: "/argentBank.webp"
     }
 ];
 
 export const gamingProjects = [
     {
-        id: 1,
-        tags: ["redux", "git", "kkona"],
-        imgSrc: "https://source.unsplash.com/300x300"
+        title: "BO Discount Helper",
+        descriptionEn: "A web app that displays the state of your district discount for the game Civilization VI",
+        descriptionFr: "Une web app affichant l'état actuel de votre BO discount pour le jeu Civilization VI",
+        tags: ["redux", "github", "sass", "react", "css3", "git", "html5", "javascript", "mongodb", "react-router", "vite"],
+        imgSrc: "/civ6.webp"
     },
     {
-        id: 2,
-        tags: ["github", "react", "heyge"],
-        imgSrc: "https://source.unsplash.com/300x300"
+        title: "World Congress Calculator",
+        descriptionEn: "An online calculator to help you split diplomatic favors evenly among teammates for the game Civilization VI",
+        descriptionFr: "Un calculateur en ligne pour vous aider à partager correctement vos faveurs diplomatiques entre chaque coéquipier pour le jeu Civilization VI",
+        tags: ["redux", "github", "react"],
+        imgSrc: "/civ6.webp"
     }
 ];
 
