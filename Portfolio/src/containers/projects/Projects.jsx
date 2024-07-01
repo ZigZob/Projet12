@@ -12,7 +12,7 @@ export default function Projects() {
     let key = `${lang}_${time}`
 
     return (
-        <div>
+        <section>
             <h2>{database[key].heading2}</h2>
             <ul>
                 {(time === "night" ? gamingProjects : professionalProjects).map((project, index) => (
@@ -23,9 +23,10 @@ export default function Projects() {
                         title={project.title}
                         descriptionEn={project.descriptionEn}
                         descriptionFr={project.descriptionFr}
+                        url={project.url}
                     />
                 ))}
             </ul>
-        </div>
+        </section>
     );
 }

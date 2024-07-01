@@ -12,7 +12,7 @@ export default function Hero() {
         <section className="hero">
             <h1 className="hero__element">{database[key].hero[0]}<strong className={`hero__element--${time === "night" ? "night" : "day"}`} >{database[key].hero[1]}</strong>,</h1>
             <h2 className="hero__element">{database[key].hero[2]} <strong className={`hero__element--${time === "night" ? "night" : "day"}`}>{database[key].hero[3]}</strong>.</h2>
-            <p className="hero__element">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae debitis magnam fugit commodi? Quae iure, accusamus quis ipsam, repudiandae officia vero libero excepturi voluptas praesentium omnis eligendi, perferendis sed qui quod reprehenderit. Illo exercitationem voluptatibus earum modi repellendus. Illum, optio.</p>
+            <p className="hero__element">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iure corporis aliquid, alias vitae vel dolorum! Natus odio libero voluptate sequi quo quasi perferendis accusantium corporis, ducimus quis velit eum nulla ullam nisi iste atque laboriosam esse praesentium ea est neque, quia optio! Illo perferendis maiores amet harum molestiae similique corrupti error eius voluptate cupiditate, voluptatibus ratione? Temporibus, ex repudiandae.</p>
         </section>
     )
 }

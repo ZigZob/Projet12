@@ -4,14 +4,16 @@ export const professionalProjects = [
         descriptionEn: "Debugging a website with Jest & React Dev Tools",
         descriptionFr: "Déboggage d'un site web avec Jest & React Dev Tools",
         tags: ["css3", "html5",],
-        imgSrc: "/OpenClassrooms.webp"
+        imgSrc: "/OpenClassrooms.webp",
+        url: "https://github.com/ZigZob/Projet10"
     },
     {
         title: "ArgentBank",
         descriptionEn: "Implement a Redux store & MongoDB paths for a banking app",
         descriptionFr: "Implémenter un store Redux & des routes MongoDB pour une application bancaire",
         tags: ["vite", "javascript",],
-        imgSrc: "/OpenClassrooms.webp"
+        imgSrc: "/OpenClassrooms.webp",
+        url: "https://github.com/ZigZob/ArgentBank-website"
     }
 ];
 
@@ -34,9 +36,6 @@ export const gamingProjects = [
 
 export const database = {
     "fr_day": {
-        header: ["Dev le jour",
-            "Dev la nuit"
-        ],
         hero: ["Faites la connaissance d'",
             "Alexandre AMALRIC",
             "mais vous pouvez m'appeler",
@@ -45,9 +44,6 @@ export const database = {
         heading2: "Projets de formation",
     },
     "fr_night": {
-        header: ["Dev la nuit",
-            "Dev le jour",
-        ],
         hero: ["Faites la connaissance de ",
             "ZigZog",
             "mais vous pouvez m'appeler",
@@ -56,9 +52,6 @@ export const database = {
         heading2: "Projets Gaming",
     },
     "en_day": {
-        header: ["Dev by day",
-            "Dev by night",
-        ],
         hero: ["Meet ",
             "Alexandre AMALRIC",
             "but you can call me",
@@ -67,9 +60,6 @@ export const database = {
         heading2: "Bootcamp projects",
     },
     "en_night": {
-        header: ["Dev by night",
-            "Dev by day",
-        ],
         hero: ["Meet ",
             "ZigZog",
             "but you can call me",

@@ -22,6 +22,10 @@
         display: flex;
         flex-direction: column;
         padding: 10px;
+
+        &.light {
+            color: white;
+        }
     }
 
     &__title {
@@ -29,6 +33,16 @@
         justify-content: center;
     }
 
-    &__description {}
+    &__link {
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        transition: transform 0.3s ease;
 
+        &:hover {
+            transform: scale(1.1)
+        }
+    }
 }

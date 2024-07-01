@@ -4,22 +4,21 @@ import { selectLang } from "../../store/slices/langSlice/selectors";
 import { selectTime } from "../../store/slices/timeSlice/selectors";
 import { useDispatch, useSelector } from "react-redux";
 import "./_index.scss"
-import { database } from "../../assets/projectData";
 
 export default function Header() {
     const dispatch = useDispatch()
     const lang = useSelector(selectLang)
     const time = useSelector(selectTime)
-    let key = `${lang}_${time}`
+
     return (
 
-        <header className={`${time === "night" ? "night" : "day"}`
+        <header className={`header ${time === "night" ? "night" : "day"}`
         } >
-            <div className="lang" onClick={() => dispatch(toggleLang())}>
+            <div className={`header__element lang ${time === "night" ? "night" : "day"}`} onClick={() => dispatch(toggleLang())}>
                 <span className={`lang__element ${lang === "fr" ? "front" : "back"}`}>FR</span>
                 <span className={`lang__element ${lang === "en" ? "front" : "back"}`}>EN</span>
             </div>
-            <div className="time" onClick={() => dispatch(toggleTime())}>
+            <div className={`header__element time ${time === "night" ? "night" : "day"}`} onClick={() => dispatch(toggleTime())}>
                 <div className={`time__element ${time === "night" ? "front" : "back"}`}>
 
                     {lang === "en" ? "Dev By Night" : "Dev la Nuit"}

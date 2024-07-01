@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+a {
+    all: unset;
+}
+
 body {
     margin: 0;
 }
@@ -10,9 +14,10 @@ li {
     list-style-type: none;
 }
 
-#root {
-    display: flex;
-    flex-direction: column;
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .day {
@@ -25,10 +30,4 @@ li {
     background-color: #1c2a62;
     transition: background-color 1000ms ease;
     color: rgba(255, 255, 255, 0.7);
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
 }

@@ -1,19 +1,21 @@
-header {
+.header {
     display: flex;
     justify-content: space-between;
-    flex: 1;
-    position: sticky;
-    top: 0;
-    z-index: 1337;
+
+    &__element {
+        position: fixed;
+        top: 0;
+        width: 130px;
+        height: 70px;
+        cursor: pointer;
+        z-index: 1337;
+    }
 }
 
 .time {
-    position: relative;
-    width: 130px;
-    height: 80px;
-    border-radius: 0 0 0 100%;
-    cursor: pointer;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 0 50%;
+    right: 0;
+    box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.2);
 
     &__element {
         position: absolute;
@@ -23,22 +25,20 @@ header {
 
         &.front {
             opacity: 1;
+            font-size: 1.1rem;
         }
 
         &.back {
             opacity: 0.4;
             transform: translate(15px, 15px);
+            font-size: 0.9rem;
         }
     }
 }
 
 .lang {
-    position: relative;
-    width: 130px;
-    height: 80px;
-    overflow: hidden;
-    border-radius: 0 0 100% 0;
-    cursor: pointer;
+    border-radius: 0 0 50% 0;
+    left: 0;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 
     &__element {
@@ -49,11 +49,13 @@ header {
 
         &.front {
             opacity: 1;
+            font-size: 1.1rem;
         }
 
         &.back {
             opacity: 0.4;
             transform: translate(-15px, 15px);
+            font-size: 0.9rem;
         }
     }
 }
