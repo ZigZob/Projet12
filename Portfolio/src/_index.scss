@@ -8,6 +8,7 @@ a {
 
 body {
     margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 li {
@@ -30,4 +31,8 @@ ul {
     background-color: #1c2a62;
     transition: background-color 1000ms ease;
     color: rgba(255, 255, 255, 0.7);
+}
+
+*:focus {
+    border: 3px solid black;
 }

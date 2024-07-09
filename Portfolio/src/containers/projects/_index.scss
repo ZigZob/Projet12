@@ -1,19 +1,24 @@
-.fade {
-    transition: all 0.3s;
-}
+.projects {
+    max-width: 1440px;
+    margin: 0 auto;
 
-.fade-out {
-    opacity: 0;
-
-    &.odd {
-        transform: translateX(50px);
+    &__header {
+        margin: 20px;
+        text-align: center;
     }
 
-    &.even {
-        transform: translateX(-50px);
-    }
-}
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
 
-.fade-in {
-    opacity: 1;
+        li:nth-child(odd) {
+            display: flex;
+            justify-content: start;
+        }
+
+        li:nth-child(even) {
+            transform: translateX(50px);
+        }
+    }
 }
