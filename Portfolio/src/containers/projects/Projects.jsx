@@ -12,7 +12,7 @@ export default function Projects() {
 
     return (
         <section className="projects" >
-            <h2 tabIndex={4} className="projects__header" >{database[key].heading2}</h2>
+            <h2 tabIndex="0" className="projects__header" >{database[key].heading2}</h2>
             <ul className="projects__list" >
                 {(time === "night" ? gamingProjects : professionalProjects).map((project, index) => (
                     <Project
@@ -24,7 +24,6 @@ export default function Projects() {
                         descriptionFr={project.descriptionFr}
                         url={project.url}
                         isLive={project.isLive}
-                        id={project.id}
                     />
                 ))}
             </ul>

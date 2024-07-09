@@ -1,9 +1,17 @@
 h1 {
     font-size: 80px;
+
+    @media (max-width:1024px) {
+        font-size: 48px;
+    }
 }
 
 h2 {
     font-size: 40px;
+
+    @media (max-width:1024px) {
+        font-size: 24px;
+    }
 }
 
 .hero {
@@ -29,7 +37,7 @@ h2 {
         }
 
         &--day {
-            color: #FF4E00;
+            color: #FF4D00;
         }
     }
 }

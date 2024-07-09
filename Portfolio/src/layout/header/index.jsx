@@ -13,8 +13,8 @@ export default function Header() {
     const time = useSelector(selectTime)
     const key = useSelector(selectKey)
     return (
-        <header className={`header ${time === "night" ? "night" : "day"}`}>
-            <div tabIndex={1} aria-label={lang === "en" ?
+        <header className="header">
+            <div tabIndex="0" aria-label={lang === "en" ?
                 "Current language is English, press this button if you'd like to swap to French"
                 : "La page est actuellement en Français, appuyez içi si vous souhaitez passer en Anglais"}
                 className={`header__element lang ${time === "night" ? "night" : "day"}`}
@@ -23,7 +23,7 @@ export default function Header() {
                 <span aria-hidden="true" className={`lang__element ${lang === "fr" ? "front" : "back"}`}>FR</span>
                 <span aria-hidden="true" className={`lang__element ${lang === "en" ? "front" : "back"}`}>EN</span>
             </div>
-            <div tabIndex={2} aria-label={database[key].headerBtn}
+            <div tabIndex="0" aria-label={database[key].headerBtn}
                 className={`header__element time ${time === "night" ? "night" : "day"}`}
                 onClick={() => dispatch(toggleTime())}
             >

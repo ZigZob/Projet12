@@ -10,7 +10,7 @@ export default function Hero() {
     const lang = useSelector(selectLang)
     const key = useSelector(selectKey)
     return (
-        <section tabIndex={3} className="hero">
+        <section tabIndex="0" className="hero">
             <h1 className="hero__element">{database[key].hero[0]}<strong className={`hero__element--${time === "night" ? "night" : "day"}`}>{database[key].hero[1]}</strong>,</h1>
             <h2 className="hero__element">{database[key].hero[2]}<strong className={`hero__element--${time === "night" ? "night" : "day"}`}> {database[key].hero[3]}</strong>.</h2>
             <p className="hero__element hero__description">

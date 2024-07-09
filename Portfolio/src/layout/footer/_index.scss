@@ -3,6 +3,12 @@
     background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
 
+    & p {
+        display: inline-flex;
+        text-wrap: balance;
+    }
+
+
     &.light {
         color: white;
     }

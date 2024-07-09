@@ -1,6 +1,7 @@
 .projects {
     max-width: 1440px;
     margin: 0 auto;
+    width: 100%;
 
     &__header {
         margin: 20px;
@@ -10,15 +11,26 @@
     &__list {
         display: flex;
         flex-direction: column;
-        flex-grow: 0;
+        max-width: 1024px;
+        margin: auto;
 
-        li:nth-child(odd) {
-            display: flex;
-            justify-content: start;
+        @media (max-width: 1024px) {
+            & li {
+                margin-left: auto;
+                margin-right: auto;
+            }
         }
 
-        li:nth-child(even) {
-            transform: translateX(50px);
+        @media (min-width: 600px) {
+            & li:nth-child(even) {
+                margin-left: auto;
+                box-shadow: -200px 30px 30px rgba(0, 0, 0, 0.3);
+            }
+
+            & li:nth-child(odd) {
+                margin-right: auto;
+                box-shadow: 200px 30px 30px rgba(0, 0, 0, 0.3);
+            }
         }
     }
 }

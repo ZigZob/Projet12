@@ -1,6 +1,23 @@
 export const professionalProjects = [
     {
-        id: 0,
+        title: "ArgentBank",
+        descriptionEn: "Implement a Redux store & MongoDB paths for a banking app",
+        descriptionFr: "Implémenter un store Redux & des routes MongoDB pour une application bancaire",
+        tags: ["vite", "javascript",],
+        imgSrc: "/OpenClassrooms.webp",
+        url: "https://github.com/ZigZob/ArgentBank-website",
+        isLive: true,
+    },
+    {
+        title: "Kasa",
+        descriptionEn: "Implement the front end of a C2C property rental app with React Router",
+        descriptionFr: "Implémenter le front end d'une application de location entre particuliers avec React Router",
+        tags: ["vite", "react-router", "react"],
+        imgSrc: "/OpenClassrooms.webp",
+        url: "https://github.com/ZigZob/Projet8",
+        isLive: true,
+    },
+    {
         title: "724 Events",
         descriptionEn: "Debugging a website with Jest & React Dev Tools",
         descriptionFr: "Déboggage d'un site web avec Jest & React Dev Tools",
@@ -9,21 +26,10 @@ export const professionalProjects = [
         url: "https://github.com/ZigZob/Projet10",
         isLive: true,
     },
-    {
-        id: 1,
-        title: "ArgentBank",
-        descriptionEn: "Implement a Redux store & MongoDB paths for a banking app",
-        descriptionFr: "Implémenter un store Redux & des routes MongoDB pour une application bancaire",
-        tags: ["vite", "javascript",],
-        imgSrc: "/OpenClassrooms.webp",
-        url: "https://github.com/ZigZob/ArgentBank-website",
-        isLive: true,
-    }
 ];
 
 export const gamingProjects = [
     {
-        id: 0,
         title: "BO Discount Helper",
         descriptionEn: "A web app that displays the state of your district discount for the game Civilization VI",
         descriptionFr: "Une web app affichant l'état actuel de votre BO discount pour le jeu Civilization VI",
@@ -32,7 +38,6 @@ export const gamingProjects = [
         isLive: false,
     },
     {
-        id: 1,
         title: "World Congress Calculator",
         descriptionEn: "An online calculator to help you split diplomatic favors evenly among teammates for the game Civilization VI",
         descriptionFr: "Un calculateur en ligne pour vous aider à partager correctement vos faveurs diplomatiques entre chaque coéquipier pour le jeu Civilization VI",

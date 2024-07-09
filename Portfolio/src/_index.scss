@@ -1,5 +1,6 @@
-*>* {
+* {
     box-sizing: border-box;
+    outline: none;
 }
 
 a {
@@ -25,14 +26,20 @@ ul {
     background-color: #f8f3ec;
     transition: background-color 1000ms ease;
     color: #66625c;
+
+    :focus {
+        outline: 5px solid #FF4D00;
+        border-radius: 20px;
+    }
 }
 
 .night {
     background-color: #1c2a62;
     transition: background-color 1000ms ease;
     color: rgba(255, 255, 255, 0.7);
-}
 
-*:focus {
-    border: 3px solid black;
+    :focus {
+        outline: 5px solid #f5dd42;
+        border-radius: 20px;
+    }
 }
