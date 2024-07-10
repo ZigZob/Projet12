@@ -29,10 +29,10 @@ ul {
     transition: background-color 1000ms ease;
     color: $primary-clr;
 
-    :focus {
-        outline: 5px solid $primary-accent-clr;
-        border-radius: 20px;
-    }
+    // :focus {
+    //     outline: 5px solid $primary-accent-clr;
+    //     border-radius: 20px;
+    // }
 }
 
 .night {
@@ -40,8 +40,8 @@ ul {
     transition: background-color 1000ms ease;
     color: $secondary-clr;
 
-    :focus {
-        outline: 5px solid $secondary-accent-clr;
-        border-radius: 20px;
-    }
+    // :focus {
+    //     outline: 5px solid $secondary-accent-clr;
+    //     border-radius: 20px;
+    // }
 }
