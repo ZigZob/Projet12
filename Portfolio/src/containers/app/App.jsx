@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux"
-import { selectTime } from "../../store/slices/timeSlice/selectors"
+import { selectTime } from "../../store/slices/timeSlice/selectors.js"
 import Header from "../../layout/Header/Index.jsx"
 import Hero from "../Hero/Index.jsx"
 import Footer from "../../layout/Footer/Index.jsx"
