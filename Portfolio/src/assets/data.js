@@ -46,7 +46,7 @@ export const gamingProjects = [
         isLive: false,
     }
 ];
-//test
+
 export const database = {
     "fr_day": {
         headerBtn: "La page affiche actuellement les projets professionels, appuyer içi pour afficher les projets liés au monde du jeu vidéo",
