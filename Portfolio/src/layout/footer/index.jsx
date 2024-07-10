@@ -8,7 +8,8 @@ export default function Footer() {
     const lang = useSelector(selectLang)
     return (
         <footer tabIndex="0" className={`footer ${time === "day" ? "light" : ""}`}>
-            <p>&copy; 2024 Alexandre AMALRIC. {lang === 'fr' ? 'Tous droits réservés' : 'All rights reserved'}.</p>
+            <p>&copy; 2024 Alexandre AMALRIC.&nbsp;</p>
+            <p>{lang === "fr" ? "Tous droits réservés" : " All rights reserved"}.</p>
 
         </footer>
     )
