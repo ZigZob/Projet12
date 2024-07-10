@@ -27,16 +27,16 @@ jobs:
           cache: npm
       - name: Install dependencies
         run: npm ci
-        working-directory: ./Portfolio
+        working-directory: ../../Portfolio
       - name: Build
         run: npm run build
-        working-directory: ./Portfolio
+        working-directory: ../../Portfolio
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./Portfolio/dist
+          path: ../../Portfolio/dist
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
