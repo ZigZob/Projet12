@@ -1,3 +1,5 @@
+@import "./assets/colors";
+
 * {
     box-sizing: border-box;
     outline: none;
@@ -23,23 +25,23 @@ ul {
 }
 
 .day {
-    background-color: #f8f3ec;
+    background-color: $primary-bg-clr;
     transition: background-color 1000ms ease;
-    color: #66625c;
+    color: $primary-clr;
 
     :focus {
-        outline: 5px solid #FF4D00;
+        outline: 5px solid $primary-accent-clr;
         border-radius: 20px;
     }
 }
 
 .night {
-    background-color: #1c2a62;
+    background-color: $secondary-bg-clr;
     transition: background-color 1000ms ease;
-    color: rgba(255, 255, 255, 0.7);
+    color: $secondary-clr;
 
     :focus {
-        outline: 5px solid #f5dd42;
+        outline: 5px solid $secondary-accent-clr;
         border-radius: 20px;
     }
 }

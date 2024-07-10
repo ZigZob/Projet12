@@ -1,3 +1,5 @@
+@import "../../assets/colors";
+
 h1 {
     font-size: 80px;
 
@@ -32,12 +34,14 @@ h2 {
         text-align: center;
         margin: 0;
 
-        &--night {
-            color: #f5dd42;
+        &--day {
+            color: $primary-accent-clr;
         }
 
-        &--day {
-            color: #FF4D00;
+        &--night {
+            color: $secondary-accent-clr;
         }
+
+
     }
 }

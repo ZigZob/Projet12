@@ -1,8 +1,8 @@
+import "./_index.scss"
 import React from "react";
 import Tag from "../Tag/Index";
 import { useSelector } from "react-redux";
 import { selectLang } from "../../store/slices/langSlice/selectors";
-import "./_index.scss"
 import { selectTime } from "../../store/slices/timeSlice/selectors";
 
 export default function Project({ imgSrc, title, descriptionEn, descriptionFr, tags, url, isLive }) {
@@ -39,7 +39,6 @@ export default function Project({ imgSrc, title, descriptionEn, descriptionFr, t
                     }
                 </div>
             </div>
-
         </article>
     );
 }
