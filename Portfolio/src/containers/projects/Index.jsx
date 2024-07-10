@@ -1,9 +1,9 @@
 import './_index.scss';
 import React from "react";
-import Project from "../../components/project/index";
+import Project from "../../components/Project/Index";
 import { useSelector } from "react-redux";
 import { selectTime } from "../../store/slices/timeSlice/selectors";
-import { database, gamingProjects, professionalProjects } from "../../assets/projectData";
+import { database, gamingProjects, professionalProjects } from "../../assets/data";
 import { selectKey } from "../../store/selectors";
 
 export default function Projects() {
@@ -13,7 +13,7 @@ export default function Projects() {
     return (
         <section className="projects" >
             <h2 tabIndex="0" className="projects__header" >{database[key].heading2}</h2>
-            <ul className="projects__list" >
+            <div className="projects__list" >
                 {(time === "night" ? gamingProjects : professionalProjects).map((project, index) => (
                     <Project
                         key={index}
@@ -26,7 +26,7 @@ export default function Projects() {
                         isLive={project.isLive}
                     />
                 ))}
-            </ul>
+            </div>
         </section>
     );
 }

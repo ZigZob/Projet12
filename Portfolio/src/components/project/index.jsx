@@ -1,5 +1,5 @@
 import React from "react";
-import Tag from "../tag/Tag";
+import Tag from "../Tag/Index";
 import { useSelector } from "react-redux";
 import { selectLang } from "../../store/slices/langSlice/selectors";
 import "./_index.scss"
@@ -9,7 +9,7 @@ export default function Project({ imgSrc, title, descriptionEn, descriptionFr, t
     const lang = useSelector(selectLang)
     const time = useSelector(selectTime)
     return (
-        <li tabIndex="0" className={"project"}>
+        <article tabIndex="0" className={"project"}>
             <div className="project__wrapper">
                 <img className="project__img" src={imgSrc} alt={title} />
                 <div className={`project__textWrapper ${time === "day" ? "light" : ""}`}>
@@ -40,6 +40,6 @@ export default function Project({ imgSrc, title, descriptionEn, descriptionFr, t
                 </div>
             </div>
 
-        </li>
+        </article>
     );
 }

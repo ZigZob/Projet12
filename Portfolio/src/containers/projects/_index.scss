@@ -15,19 +15,19 @@
         margin: auto;
 
         @media (max-width: 1024px) {
-            & li {
+            & article {
                 margin-left: auto;
                 margin-right: auto;
             }
         }
 
         @media (min-width: 600px) {
-            & li:nth-child(even) {
+            & article:nth-child(even) {
                 margin-left: auto;
                 box-shadow: -200px 30px 30px rgba(0, 0, 0, 0.3);
             }
 
-            & li:nth-child(odd) {
+            & article:nth-child(odd) {
                 margin-right: auto;
                 box-shadow: 200px 30px 30px rgba(0, 0, 0, 0.3);
             }

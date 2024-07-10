@@ -2,7 +2,7 @@ import "./_index.scss"
 import { useSelector } from "react-redux"
 import { selectTime } from "../../store/slices/timeSlice/selectors"
 import { selectLang } from "../../store/slices/langSlice/selectors"
-import { database } from "../../assets/projectData"
+import { database } from "../../assets/data"
 import { selectKey } from "../../store/selectors"
 
 export default function Hero() {
