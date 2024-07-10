@@ -1,9 +1,9 @@
 import "./_index.scss"
 import React from "react";
-import Tag from "../Tag/Index.jsx";
+import Tag from "../tag/index.jsx";
 import { useSelector } from "react-redux";
-import { selectLang } from "../../store/slices/langSlice/selectors";
-import { selectTime } from "../../store/slices/timeSlice/selectors";
+import { selectLang } from "../../store/slices/langSlice/selectors.js";
+import { selectTime } from "../../store/slices/timeSlice/selectors.js";
 
 export default function Project({ imgSrc, title, descriptionEn, descriptionFr, tags, url, isLive }) {
     const lang = useSelector(selectLang)

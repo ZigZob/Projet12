@@ -1,10 +1,10 @@
 import './_index.scss';
 import React from "react";
-import Project from "../../components/Project/Index.jsx";
+import Project from "../../components/project/index.jsx";
 import { useSelector } from "react-redux";
-import { selectTime } from "../../store/slices/timeSlice/selectors";
-import { database, gamingProjects, professionalProjects } from "../../assets/data";
-import { selectKey } from "../../store/selectors";
+import { selectTime } from "../../store/slices/timeSlice/selectors.js";
+import { database, gamingProjects, professionalProjects } from "../../assets/data.js";
+import { selectKey } from "../../store/selectors.js";
 
 export default function Projects() {
     const time = useSelector(selectTime);

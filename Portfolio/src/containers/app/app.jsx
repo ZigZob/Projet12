@@ -1,10 +1,10 @@
 import { useSelector } from "react-redux"
 import { selectTime } from "../../store/slices/timeSlice/selectors.js"
-import Header from "../../layout/Header/Index.jsx"
-import Hero from "../Hero/Index.jsx"
-import Footer from "../../layout/Footer/Index.jsx"
+import Header from "../../layout/header/index.jsx"
+import Hero from "../hero/index.jsx"
+import Footer from "../../layout/footer/index.jsx"
 import "./_index.scss"
-import Projects from "../Projects/Index.jsx"
+import Projects from "../projects/index.jsx"
 
 export default function App() {
     const time = useSelector(selectTime)
