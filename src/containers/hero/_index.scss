@@ -1,0 +1,47 @@
+@import "../../assets/colors";
+
+h1 {
+    font-size: 80px;
+
+    @media (max-width:1024px) {
+        font-size: 48px;
+    }
+}
+
+h2 {
+    font-size: 40px;
+
+    @media (max-width:1024px) {
+        font-size: 24px;
+    }
+}
+
+.hero {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    &__description {
+        font-style: italic;
+        padding: 20px;
+        line-height: normal;
+    }
+
+    &__element {
+        max-width: 1024px;
+        text-wrap: balance;
+        text-align: center;
+        margin: 0;
+
+        &--day {
+            color: $primary-accent-clr;
+        }
+
+        &--night {
+            color: $secondary-accent-clr;
+        }
+
+
+    }
+}

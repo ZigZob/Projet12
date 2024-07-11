@@ -1,0 +1,14 @@
+.appWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    margin: 100px 20px 20px 20px;
+    gap: 20px;
+}

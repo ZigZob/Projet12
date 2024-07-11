@@ -4,7 +4,7 @@ import Header from "../../layout/header/index.jsx"
 import Hero from "../hero/index.jsx"
 import Footer from "../../layout/footer/index.jsx"
 import "./_index.scss"
-import Projects from "../projects/index.jsx"
+import Projects from "../projects/index"
 
 export default function App() {
     const time = useSelector(selectTime)
