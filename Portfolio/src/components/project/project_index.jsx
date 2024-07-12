@@ -1,6 +1,6 @@
 import "./_index.scss"
 import React from "react";
-import Tag from "../tag/Index.jsx";
+import Tag from "../tag/tag_index.jsx";
 import { useSelector } from "react-redux";
 import { selectLang } from "../../store/slices/langSlice/selectors.js";
 import { selectTime } from "../../store/slices/timeSlice/selectors.js";
