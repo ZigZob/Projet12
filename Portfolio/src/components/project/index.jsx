@@ -1,6 +1,6 @@
 import "./_index.scss"
 import React from "react";
-import Tag from "../tag/index.jsx";
+import Tag from "../tag/Index.jsx";
 import { useSelector } from "react-redux";
 import { selectLang } from "../../store/slices/langSlice/selectors.js";
 import { selectTime } from "../../store/slices/timeSlice/selectors.js";
@@ -29,12 +29,12 @@ export default function Project({ imgSrc, title, descriptionEn, descriptionFr, t
                             href={url} target="_blank"
                             className="project__link project__link--live" >
                             <span aria-hidden="true" >{lang === "en" ? "Look it up on Github" : "Voir le projet en détails sur Github"}</span>
-                            <img aria-hidden="true" src="/Portfolio/github.svg" alt="Github" />
+                            <img aria-hidden="true" src="/github.svg" alt="Github" />
                         </a>
                         :
                         <div className="project__link">
                             <span>Coming soon on</span>
-                            <img src="/Portfolio/github.svg" alt="Github" />
+                            <img src="/github.svg" alt="Github" />
                         </div>
                     }
                 </div>

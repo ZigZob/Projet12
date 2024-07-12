@@ -1,1 +1,0 @@
-export const selectTime = (state) => state.time
