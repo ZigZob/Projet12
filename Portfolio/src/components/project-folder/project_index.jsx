@@ -29,12 +29,12 @@ export default function Project({ imgSrc, title, descriptionEn, descriptionFr, t
                             href={url} target="_blank"
                             className="project__link project__link--live" >
                             <span aria-hidden="true" >{lang === "en" ? "Look it up on Github" : "Voir le projet en détails sur Github"}</span>
-                            <img aria-hidden="true" src="/github.svg" alt="Github" />
+                            <img aria-hidden="true" src="/Projet12/github.svg" alt="Github" />
                         </a>
                         :
                         <div className="project__link">
                             <span>Coming soon on</span>
-                            <img src="/github.svg" alt="Github" />
+                            <img src="/Projet12/github.svg" alt="Github" />
                         </div>
                     }
                 </div>
