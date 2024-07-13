@@ -1,6 +1,6 @@
 import './_index.scss';
 import React from "react";
-import Project from "../../components/project/project_index.jsx";
+import Project from "../../components/project-folder/project_index.jsx";
 import { useSelector } from "react-redux";
 import { selectTime } from "../../store/slices/timeSlice/selectors.js";
 import { database, gamingProjects, professionalProjects } from "../../assets/data.js";
