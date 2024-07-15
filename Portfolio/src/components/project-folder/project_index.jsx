@@ -33,7 +33,7 @@ export default function Project({ imgSrc, title, descriptionEn, descriptionFr, t
                         </a>
                         :
                         <div className="project__link">
-                            <span>Coming soon on</span>
+                            <span>{lang === "en" ? "Coming soon on" : "Bientôt disponible sur"}</span>
                             <img src="/Projet12/github.svg" alt="Github" />
                         </div>
                     }
