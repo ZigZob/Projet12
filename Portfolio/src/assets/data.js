@@ -47,6 +47,23 @@ export const gamingProjects = [
     }
 ];
 
+export const skillsList = {
+    "en": [["Working alongside project management tools with ", "Trello & Notion"],
+    ["Adopting an agile workflow with ", "SCRUM"],
+    ["Implementing smooth ", "CSS animations"],
+    ["Taking on a mobile-first approach with ", "responsive design"],
+    ["Interacting with a RESTful API in ", "Swagger"],
+    ["Developing with naming conventions with ", "BEM"]]
+    ,
+    "fr": [["Travailler avec des outils de gestion de projet tels que ", "Trello & Notion"],
+    ["Adopter une méthode agile avec ", "SCRUM"],
+    ["Implémenter des ", "animations CSS ", "fluides"],
+    ["Visualiser une approche mobile-first avec le ", "responsive design"],
+    ["Interagir avec une API RESTful dans ", "Swagger"],
+    ["Développer avec des conventions de nommage comme ", "BEM"]]
+}
+
+
 export const database = {
     "fr_day": {
         headerBtn: "La page affiche actuellement les projets professionels, appuyer içi pour afficher les projets liés au monde du jeu vidéo",

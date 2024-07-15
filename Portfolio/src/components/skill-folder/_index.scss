@@ -1,0 +1,11 @@
+@import "../../assets/colors";
+
+.skill {
+    padding: 10px;
+
+    & em {
+        color: $primary-accent-clr;
+        font-weight: bold;
+        font-style: normal;
+    }
+}

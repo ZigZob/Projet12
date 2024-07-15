@@ -5,6 +5,7 @@ import Hero from "../hero-folder/hero_index.jsx"
 import Footer from "../../layout/footer-folder/footer_index.jsx"
 import "./_index.scss"
 import Projects from "../projects-folder/projects_index.jsx"
+import Skills from "../skills-folder/skills_index.jsx"
 
 export default function App() {
     const time = useSelector(selectTime)
@@ -13,6 +14,7 @@ export default function App() {
             <Header />
             <main>
                 <Hero />
+                {time === "day" ? <Skills /> : null}
                 <Projects />
             </main>
             <Footer />
